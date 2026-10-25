@@ -324,3 +324,21 @@ html[data-theme='dark'] .quantity { gap: 9px; padding: 4px; border: 1px solid rg
 html[data-theme='dark'] .quantity button { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 0; border-radius: 50%; color: #f7f9f9; background: #253746; box-shadow: 0 2px 7px rgba(0,0,0,.25); transition: transform .2s ease, color .2s ease, background .2s ease; }
 html[data-theme='dark'] .quantity button:hover { color: #fff; background: #1d9bf0; transform: scale(1.08); }
 html[data-theme='dark'] .quantity button:active { transform: scale(.92); }
+
+/* Панель каталога: аккуратные поля без системных стрелок */
+.catalog-toolbar input,
+.catalog-toolbar select,
+.catalog-toolbar .filter-button {
+  border-radius: 14px;
+}
+
+.catalog-toolbar input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.catalog-toolbar input[type='number']::-webkit-inner-spin-button,
+.catalog-toolbar input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
